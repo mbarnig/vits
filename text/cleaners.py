@@ -100,4 +100,5 @@ def english_cleaners2(text):
   return phonemes
 
 def donothing_cleaners(text):
+  '''Pipeline to do nothing'''
   return text
