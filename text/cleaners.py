@@ -99,5 +99,5 @@ def english_cleaners2(text):
   phonemes = collapse_whitespace(phonemes)
   return phonemes
 
-def do_nothing(text):
+def donothing_cleaners(text):
   return text
