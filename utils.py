@@ -56,7 +56,7 @@ def save_checkpoint(model, optimizer, learning_rate, iteration, checkpoint_path)
               'learning_rate': learning_rate}, checkpoint_path)
   
   # save a copy of the checkpoints to Google Drive
-  filename = os.path basename(checkpoint_path) 
+  filename = os.path.basename(checkpoint_path) 
   new_checkpoint_path = "/content/gdrive/MyDrive/logs/vctk_base/" + filename
   torch.save({'model': state_dict,
               'iteration': iteration,
