@@ -89,11 +89,6 @@ class TextAudioLoader(torch.utils.data.Dataset):
             text_norm = commons.intersperse(text_norm, 0)
         text_norm = torch.LongTensor(text_norm)
         return text_norm
-    
-    def get_phonemes(self, phonemes):
-        text_norm = cleaned_text_to_sequence(text)
-        text_norm = torch.LongTensor(text_norm)
-        return text_norm
 
     def __getitem__(self, index):
         return self.get_audio_text_pair(self.audiopaths_and_text[index])
