@@ -56,12 +56,12 @@ def save_checkpoint(model, optimizer, learning_rate, iteration, checkpoint_path)
               'learning_rate': learning_rate}, checkpoint_path)
   
   # save a copy of the checkpoints to Google Drive
-  filename = os.path.basename(checkpoint_path) 
-  new_checkpoint_path = "/content/gdrive/MyDrive/logs/vctk_base/" + filename
-  torch.save({'model': state_dict,
-              'iteration': iteration,
-              'optimizer': optimizer.state_dict(),
-              'learning_rate': learning_rate}, new_checkpoint_path)
+  # filename = os.path.basename(checkpoint_path) 
+  # new_checkpoint_path = "/content/gdrive/MyDrive/logs/vctk_base/" + filename
+  # torch.save({'model': state_dict,
+  #            'iteration': iteration,
+  #            'optimizer': optimizer.state_dict(),
+  #            'learning_rate': learning_rate}, new_checkpoint_path)
 
 def summarize(writer, global_step, scalars={}, histograms={}, images={}, audios={}, audio_sampling_rate=22050):
   for k, v in scalars.items():
