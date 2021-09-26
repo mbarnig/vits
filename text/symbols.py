@@ -15,8 +15,8 @@ _letters_ipa = "ɑɐɒæɓʙβɔɕçɗɖðʤəɘɚɛɜɝɞɟʄɡɠɢʛɦɧħɥʜ
 
 
 # Export all symbols:
-# symbols = [_pad] + list(_punctuation) + list(_letters) + list(_letters_ipa) + [_tie] + [_nasal] + [_non_syllabic] + [_special_1] + [_special_2]
-symbols = [_pad] + list(_punctuation) + list(_letters) + list(_letters_ipa)
+symbols = [_pad] + list(_punctuation) + list(_letters) + list(_letters_ipa) + [_tie] + [_nasal] + [_non_syllabic] + [_special_1] + [_special_2]
+# symbols = [_pad] + list(_punctuation) + list(_letters) + list(_letters_ipa)
 
 # Special symbol ids
 SPACE_ID = symbols.index(" ")
